@@ -5,7 +5,7 @@ class ProductCategoryRow extends Component {
     const category = this.props.category;
     return (
       <tr>
-        <td colSpan='2'>{category}</td>
+        <th colSpan='2'>{category}</th>
       </tr>
     )
   }
