@@ -5,7 +5,7 @@ import SearchBar from './SearchBar';
 class FilterableProductTable extends Component {
   render() {
     return (
-      <div id='container'>
+      <div>
         <SearchBar />
         <ProductTable products={this.props.products} />
       </div>

@@ -4,8 +4,13 @@ class SearchBar extends Component {
   render() {
     return (
       <div>
-        Search Bar
-        {/*TODO: add a form here instead of plain text*/}
+        <form>
+        <input type="text" placeholder="Search..." />
+        <p>
+          <input type="checkbox" />
+          Only show products in stock
+        </p>
+      </form>
       </div>
     )
   }
