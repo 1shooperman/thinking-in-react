@@ -5,17 +5,15 @@ import ProductRow from './ProductRow';
 class ProductTable extends Component {
   buildRows() {
     const products = this.props.products;
-    let rows = [];
+    const rows = [];
     let newCategory = null;
-    products.forEach(function(product){
+    products.forEach((product) => {
       if (newCategory !== product.category || newCategory === null) {
         newCategory = product.category;
-        rows.push(
-          <ProductCategoryRow
-            key={product.category}
-            category={product.category}
-          />
-        )
+        rows.push(<ProductCategoryRow
+          key={product.category}
+          category={product.category}
+        />);
       }
 
       rows.push(
@@ -41,7 +39,7 @@ class ProductTable extends Component {
         </thead>
         <tbody>{rows}</tbody>
       </table>
-    )
+    );
   }
 }
 
